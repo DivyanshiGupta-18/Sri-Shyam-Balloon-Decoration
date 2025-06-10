@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Shyam Balloon Decoration - Premium Party Decoration Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b9d;
+            --secondary-color: #4ecdc4;
+            --accent-color: #45b7d1;
+            --gold-color: #ffd700;
+            --dark-color: #2c3e50;
+            --light-color: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            overflow-x: hidden;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, rgba(255, 107, 157, 0.95), rgba(78, 205, 196, 0.95));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .floating-balloons {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .balloon {
+            position: absolute;
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+            opacity: 0.7;
+        }
+
+        .balloon:nth-child(1) {
+            width: 60px;
+            height: 80px;
+            background: var(--gold-color);
+            left: 10%;
+            top: 20%;
+            animation-delay: 0s;
+        }
+
+        .balloon:nth-child(2) {
+            width: 50px;
+            height: 70px;
+            background: var(--primary-color);
+            left: 80%;
+            top: 30%;
+            animation-delay: 2s;
+        }
+
+        .balloon:nth-child(3) {
+            width: 40px;
+            height: 60px;
+            background: var(--accent-color);
+            left: 60%;
+            top: 60%;
+            animation-delay: 4s;
+        }
+
+        .balloon:nth-child(4) {
+            width: 45px;
+            height: 65px;
+            background: var(--secondary-color);
+            left: 20%;
+            top: 70%;
+            animation-delay: 6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-15px) rotate(3deg); }
+            66% { transform: translateY(-25px) rotate(-3deg); }
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-brand i {
+            margin-right: 10px;
+            color: var(--gold-color);
+        }
+
+        .nav-link {
+            color: var(--dark-color) !important;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+            transform: translateY(-2px);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            margin-bottom: 1rem;
+            animation: slideInUp 1s ease-out;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.5rem;
+            color: var(--gold-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            margin-bottom: 2rem;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .btn-custom {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            margin-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+            color: white;
+        }
+
+        .btn-outline-custom {
+            border: 3px solid white;
+            background: transparent;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-custom:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 25px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--gold-color));
+        }
+
+        .service-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .service-icon {
+            font-size: 4rem;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .service-card h4 {
+            color: var(--dark-color);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4rem;
+            position: relative;
+            color: var(--dark-color);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--gold-color));
+            border-radius: 3px;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem;
+            border-radius: 25px;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item i {
+            font-size: 1.8rem;
+            margin-right: 1.5rem;
+            width: 35px;
+            color: var(--gold-color);
+        }
+
+        .footer {
+            background: var(--dark-color);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            height: 300px;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 600;
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            color: white;
+            text-decoration: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .stats-section {
+            background: var(--light-color);
+            padding: 5rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.2rem;
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 4rem;
+            color: var(--primary-color);
+            font-family: serif;
+        }
+
+        .about-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .feature-list li::before {
+            content: '🎈';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 120px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .scroll-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .service-card {
+                padding: 1.5rem;
+            }
+            
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-heart"></i>
+                Sri Shyam Balloon Decoration
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="floating-balloons">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="subtitle">🎈 Premium Party Decorations</div>
+                        <h1>Sri Shyam Balloon Decoration</h1>
+                        <p>Making your special moments unforgettable with stunning balloon decorations and themed party setups. From birthdays to weddings, we create magical experiences!</p>
+                        <div class="hero-buttons">
+                            <a href="#services" class="btn btn-custom">Our Services</a>
+                            <a href="tel:+918595554267" class="btn btn-outline-custom">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Services</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card text-center">
+                        <i class="fas fa-palette service-icon"></i>
+                        <h4>Balloon Artistry</h4>
+                        <p>Expert balloon sculpting and artistic arrangements that transform any space into a magical wonderland.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card text-center">
+                        <i class="fas fa-home service-icon"></i>
+                        <h4>Balloon Decor</h4>
+                        <p>Beautiful balloon decorations for homes, venues, and outdoor spaces with premium quality balloons.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card text-center">
+                        <i class="fas fa-drafting-compass service-icon"></i>
+                        <h4>Balloon Design</h4>
+                        <p>Custom balloon design solutions tailored to your theme, color preferences, and venue requirements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card text-center">
+                        <i class="fas fa-shapes service-icon"></i>
+                        <h4>Balloon Modelling</h4>
+                        <p>Creative balloon modeling and sculptures that add a unique touch to your celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card text-center">
+                        <i class="fas fa-birthday-cake service-icon"></i>
+                        <h4>Birthday Party Decoration</h4>
+                        <p>Complete birthday decoration packages with balloons, banners, and themed setups for all ages.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card text-center">
+                        <i class="fas fa-baby service-icon"></i>
+                        <h4>Welcome Baby Decoration</h4>
+                        <p>Adorable baby welcome decorations with soft colors and cute balloon arrangements.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-card text-center">
+                        <i class="fas fa-gift service-icon"></i>
+                        <h4>Baby Shower</h4>
+                        <p>Elegant baby shower decorations with balloon arches, centerpieces, and photo booth setups.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="service-card text-center">
+                        <i class="fas fa-theater-masks service-icon"></i>
+                        <h4>Theme Decoration</h4>
+                        <p>Customized theme-based decorations for any occasion with matching balloon colors and designs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="service-card text-center">
+                        <i class="fas fa-heart service-icon"></i>
+                        <h4>Anniversary Decoration</h4>
+                        <p>Romantic anniversary decorations with elegant balloon arrangements and personalized touches.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1000">
+                    <div class="service-card text-center">
+                        <i class="fas fa-calendar-check service-icon"></i>
+                        <h4>Anniversary Party Planning</h4>
+                        <p>Complete anniversary party planning services including decoration, setup, and coordination.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1100">
+                    <div class="service-card text-center">
+                        <i class="fas fa-baby service-icon"></i>
+                        <h4>Baby Shower Planning</h4>
+                        <p>End-to-end baby shower planning with decoration, games, and memorable photo opportunities.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="service-card text-center">
+                        <i class="fas fa-birthday-cake service-icon"></i>
+                        <h4>Birthday Party Planning</h4>
+                        <p>Complete birthday party planning services from decoration to entertainment and coordination.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1300">
+                    <div class="service-card text-center">
+                        <i class="fas fa-child service-icon"></i>
+                        <h4>Children's Party Planning</h4>
+                        <p>Fun-filled children's party planning with age-appropriate decorations and entertainment.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1400">
+                    <div class="service-card text-center">
+                        <i class="fas fa-pray service-icon"></i>
+                        <h4>Religious Event</h4>
+                        <p>Respectful and beautiful decorations for religious ceremonies and spiritual celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1500">
+                    <div class="service-card text-center">
+                        <i class="fas fa-school service-icon"></i>
+                        <h4>School Event</h4>
+                        <p>Educational and fun decorations for school events, functions, and celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1600">
+                    <div class="service-card text-center">
+                        <i class="fas fa-glass-cheers service-icon"></i>
+                        <h4>Stag Party Planning</h4>
+                        <p>Exciting stag party decorations and planning services for memorable bachelor celebrations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1700">
+                    <div class="service-card text-center">
+                        <i class="fas fa-star service-icon"></i>
+                        <h4>Theme Party</h4>
+                        <p>Creative theme party setups with matching balloon decorations and immersive experiences.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="1800">
+                    <div class="service-card text-center">
+                        <i class="fas fa-calendar-alt service-icon"></i>
+                        <h4>Theme Party Planning</h4>
+                        <p>Complete theme party planning services with decoration, coordination, and execution.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item" data-aos="fade-up">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                        <span class="stat-number" data-count="1000">0</span>
+                        <span class="stat-label">Events Completed</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                        <span class="stat-number" data-count="5">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                        <span class="stat-number" data-count="18">0</span>
+                        <span class="stat-label">Services Offered</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Our Gallery</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <div class="text-center">
+                            <i class="fas fa-birthday-cake fa-3x mb-3"></i>
+                            <h5>Birthday Celebrations</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item">
+                        <div class="text-center">
+                            <i class="fas fa-baby fa-3x mb-3"></i>
+                            <h5>Baby Shower</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="gallery-item">
+                        <div class="text-center">
+                            <i class="fas fa-heart fa-3x mb-3"></i>
+                            <h5>Anniversary Decor</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h2 class="section-title text-start">About Sri Shyam Balloon Decoration</h2>
+                    <p class="lead">We are passionate about creating magical moments through stunning balloon decorations and themed party setups. With years of experience in the industry, we have transformed countless celebrations into unforgettable experiences.</p>
+                    <p>Our team of skilled decorators and party planners work tirelessly to bring your vision to life. From intimate family gatherings to grand celebrations, we ensure every detail is perfect.</p>
+                    <ul class="feature-list">
+                        <li>Premium quality balloons and materials</li>
+                        <li>Creative and unique design concepts</li>
+                        <li>Professional and timely service</li>
+                        <li>Affordable pricing packages</li>
+                        <li>Complete event planning solutions</li>
+                        <li>Customized themes for all occasions</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="gallery-item" style="height: 400px;">
+                        <div class="text-center">
+                            <i class="fas fa-users fa-4x mb-3"></i>
+                            <h3>Our Team</h3>
+                            <p>Dedicated professionals creating magical moments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="testimonial-card">
+                        <p>Amazing balloon decoration for my daughter's birthday! The team was professional and the setup was beyond our expectations. Highly recommended!</p>
+                        <div class="mt-3">
+                            <strong>- Priya Sharma</strong>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <p>Sri Shyam Balloon Decoration made our anniversary celebration truly special. Beautiful arrangements and excellent service. Thank you!</p>
+                        <div class="mt-3">
+                            <strong>- Rajesh & Sunita</strong>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="testimonial-card">
+                        <p>Perfect baby shower decoration! The team understood our requirements perfectly and delivered an outstanding setup. Will definitely hire again!</p>
+                        <div class="mt-3">
+                            <strong>- Kavita Singh</strong>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Get In Touch</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+918595554267" class="text-white">+91 85955 54267</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Address:</strong><br>
+                                City Plaza, Gaur City 1,<br>
+                                Sector 4, Ghaziabad,<br>
+                                Uttar Pradesh 201009
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <strong>Working Hours:</strong><br>
+                                Mon - Sun: 9:00 AM - 9:00 PM
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@srishyamballoon.com" class="text-white">info@srishyamballoon.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <div class="bg-white p-4 rounded-4 shadow">
+                        <h4 class="mb-4">Send us a Message</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="event" class="form-label">Event Type</label>
+                                <select class="form-control" id="event" required>
+                                    <option value="">Select Event Type</option>
+                                    <option value="birthday">Birthday Party</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="baby-shower">Baby Shower</option>
+                                    <option value="welcome-baby">Welcome Baby</option>
+                                    <option value="theme-party">Theme Party</option>
+                                    <option value="religious">Religious Event</option>
+                                    <option value="school">School Event</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Tell us about your event requirements..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-custom w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">
+                        <i class="fas fa-heart me-2" style="color: var(--gold-color);"></i>
+                        Sri Shyam Balloon Decoration
+                    </h5>
+                    <p>Creating magical moments with stunning balloon decorations and themed party setups. Your celebration, our passion!</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/918595554267" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white-50">Home</a></li>
+                        <li><a href="#services" class="text-white-50">Services</a></li>
+                        <li><a href="#gallery" class="text-white-50">Gallery</a></li>
+                        <li><a href="#about" class="text-white-50">About Us</a></li>
+                        <li><a href="#contact" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="mb-3">Popular Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white-50">Birthday Party Decoration</a></li>
+                        <li><a href="#" class="text-white-50">Anniversary Decoration</a></li>
+                        <li><a href="#" class="text-white-50">Baby Shower Planning</a></li>
+                        <li><a href="#" class="text-white-50">Theme Party Setup</a></li>
+                        <li><a href="#" class="text-white-50">Balloon Artistry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2024 Sri Shyam Balloon Decoration. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> for magical celebrations</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/918595554267?text=Hi! I'm interested in balloon decoration services." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.15)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            }
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // Intersection Observer for counter animation
+        const statsSection = document.querySelector('.stats-section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const event = document.getElementById('event').value;
+            const message = document.getElementById('message').value;
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Hi! I'm interested in balloon decoration services.
+            
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Event Type: ${event}
+Message: ${message}`;
+            
+            const whatsappURL = `https://wa.me/918595554267?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappURL, '_blank');
+            
+            // Show success message
+            alert('Thank you for your inquiry! You will be redirected to WhatsApp to complete your message.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Add active class to navigation items
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Preloader (optional)
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Mobile menu close on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+        // Lazy loading for images (if you add real images later)
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+</body>
+</html>
