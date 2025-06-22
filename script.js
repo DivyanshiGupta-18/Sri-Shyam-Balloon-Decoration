@@ -26,6 +26,14 @@ I would like to inquire about your balloon decoration services.`;
 
   this.reset();
 });
+
+document.getElementById("callBtn").addEventListener("click", function () {
+  window.location.href = "tel:+918954191650";
+});
+
+
+
+
 // Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {

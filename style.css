@@ -51,6 +51,11 @@
   .navbar-nav .nav-link:hover {
       color: #FFD700 !important;
   }
+  @media screen and (max-width: 480px) {
+  .navbar-brand{
+    font-size: 1.1rem;
+  }
+}
 
   /* Hero Carousel */
   .hero-carousel {
@@ -123,6 +128,18 @@
       box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
       color: #333;
   }
+  @media screen and (max-width: 480px) {
+  .carousel-caption h1 {
+    font-size: 2.8rem;
+  }
+  .carousel-caption p{
+    font-size: 1.2rem;
+  }
+  .btn-custom{
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
 
   /* Services Section */
   .services {
