@@ -19,7 +19,7 @@ Message: ${message}
 I would like to inquire about your balloon decoration services.`;
 
   // Direct redirect to WhatsApp with updated number
-  const whatsappUrl = `https://wa.me/918954191650?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/918595554267?text=${encodeURIComponent(
     whatsappMessage
   )}`;
   window.location.href = whatsappUrl; // Direct redirect instead of new tab
@@ -28,7 +28,7 @@ I would like to inquire about your balloon decoration services.`;
 });
 
 document.getElementById("callBtn").addEventListener("click", function () {
-  window.location.href = "tel:+918954191650";
+  window.location.href = "tel:+918595554267";
 });
 
 // Smooth scrolling
